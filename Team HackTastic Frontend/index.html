@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2 Emission Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>CO2 Emission Tracker for Websites</h1>
+    </header>
+    
+    <!-- Expanded About Section -->
+    <section id="about-co2">
+        <h2>What is CO2 Emission in Websites?</h2>
+        <p>Websites contribute to CO2 emissions due to the energy consumed by data centers, servers, and user devices to load web pages. Each byte transferred across the internet requires energy, and the bigger the data, the higher the carbon footprint. Optimizing web services can reduce the carbon impact of your digital presence, contributing to a more sustainable environment.</p>
+        <p>The average website generates approximately <strong>1.76g of CO2 per page view</strong>, and the number increases with larger images, unoptimized scripts, and inefficient server configurations. Web developers can play a crucial role in minimizing this by implementing various optimization techniques.</p>
+    </section>
+    
+    <!-- Causes Section -->
+    <section id="causes">
+        <h2>What Causes Website CO2 Emissions?</h2>
+        <ul>
+            <li>Large uncompressed media files (images, videos)</li>
+            <li>Heavy JavaScript frameworks</li>
+            <li>Non-optimized third-party resources (CDN, fonts, etc.)</li>
+            <li>Excessive use of external scripts and libraries</li>
+            <li>Data transfer and server processing power</li>
+        </ul>
+    </section>
+
+    <!-- URL Input Section -->
+    <section id="diagnose">
+        <h2>Diagnose Your Website's CO2 Emissions</h2>
+        <label for="website-url">Enter Your Website URL:</label>
+        <input type="url" id="website-url" placeholder="https://example.com" required>
+        
+        <button onclick="diagnoseCO2()">Diagnose</button>
+        
+        <p id="result"></p>
+    </section>
+    
+    <!-- Suggestions Section -->
+    <section id="suggestions">
+        <h2>Suggestions to Reduce Emissions</h2>
+        <p>Based on your diagnosis, here are some suggestions:
+            <br><br>
+            Choose Green Hosting: Opt for hosting providers that use renewable energy sources to power their data centers.
+            <br><br>
+            Optimize Performance: Compress and resize images, using formats like WebP.
+            <br><br>
+            Minify HTML, CSS, and JavaScript to reduce file sizes and improve load times.
+            <br><br>
+            Implement lazy loading for images and videos to load them only when needed.
+            <br><br>
+            Simplify Design: Adopt a minimalist design to decrease data load. Ensure your site is mobile-optimized for better performance on slower connections.
+            <br><br>
+            Regular Audits: Use tools like the Website Carbon Calculator to measure your site's carbon footprint and identify areas for improvement.
+            <br><br>
+            Offset Emissions: Invest in carbon offset programs to neutralize any unavoidable emissions from your website operations.
+        </p>
+        <ul id="suggestions-list"></ul>
+    </section>
+    
+</body>
+</html>
